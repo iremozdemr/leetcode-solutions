@@ -20,15 +20,6 @@ class Solution {
             size++;
         }
         int index = (size/2)+1;
-        /*
-        int index;
-        if(size%2 == 1){
-            index = (size/2);
-        }
-        else{
-            index = size/2-1;
-        }
-        */
         ListNode temp2 = head;
         for(int i = 0; i<index-1; i++){
             temp2 = temp2.next;
