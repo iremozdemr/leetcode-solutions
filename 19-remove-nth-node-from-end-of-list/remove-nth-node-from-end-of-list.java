@@ -10,28 +10,41 @@
  */
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        int size = findSize(head);
+        int index = size-n;
         if(head == null){
             return null;
         }
-        int size = findSize(head);
-        System.out.println(size);
-        if(n > size){
+        else if(n > size){
             return null;
         }
-        if(n <= 0){
+        else if(n <= 0){
             return null;
         }
-        if(size == 1 && n == 1){
+        else if(size == 1 && n == 1){
             head = null;
             return head;
         }
-        int index = size-n;
-        if(index == 0){
+        else if(index == 0){
             head = head.next;
             return head;
         }
-        System.out.println(index);
-        removeByIndex(index,head);
+        else if(index == size-1){
+            ListNode temp = head;
+            while(temp.next.next != null){
+                temp = temp.next;
+            }
+            temp.next = null;
+            return head;
+        }
+        else{
+            ListNode temp = head;
+            for(int i = 0;i<index-1;i++){
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+        }
+        //removeByIndex(index,head);
         return head;
     }
 
@@ -55,11 +68,16 @@ class Solution {
     }
 
     public int findSize(ListNode head){
-        int size = 0;
-        while(head != null){
-            size++;
-            head = head.next;
+        if(head == null){
+            return 0;
         }
-        return size;
+        else{
+            int size = 0;
+            while(head != null){
+                size++;
+                head = head.next;
+            }
+            return size;
+        }
     }
 }
