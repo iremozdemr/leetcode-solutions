@@ -44,27 +44,7 @@ class Solution {
             }
             temp.next = temp.next.next;
         }
-        //removeByIndex(index,head);
         return head;
-    }
-
-    public void removeByIndex(int index,ListNode head){
-        ListNode temp1 = head;
-        ListNode temp2 = head;
-        int size = findSize(temp1);
-        if(index == size-1){
-            while(temp2.next.next != null){
-                temp2 = temp2.next;
-            }
-            temp2.next = null;
-        }
-        else{
-            ListNode temp = head;
-            for(int i = 0;i<index-1;i++){
-                temp = temp.next;
-            }
-            temp.next = temp.next.next;
-        }
     }
 
     public int findSize(ListNode head){
