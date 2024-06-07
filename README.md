@@ -4,17 +4,7 @@ Welcome to the **LeetCode Solutions** repository! This repository contains solut
 
 ## Repository Structure
 
-Each solution is organized in its own directory, named according to the problem's title and ID on LeetCode. For example:
-
-├── README.md
-├── Problem001_TwoSum
-│ ├── Solution.java
-│ └── README.md
-├── Problem002_AddTwoNumbers
-│ ├── Solution.java
-│ └── README.md
-└── ...
-
+Each solution is organized in its own directory, named according to the problem's title and ID on LeetCode.
 
 ## How It Works
 
