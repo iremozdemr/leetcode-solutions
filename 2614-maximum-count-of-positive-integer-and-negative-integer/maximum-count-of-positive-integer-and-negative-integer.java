@@ -1,8 +1,5 @@
 class Solution {
     public int maximumCount(int[] nums) {
-        int start = 0;
-        int end = nums.length-1;
-
         int neg = 0;
         int pos = 0;
         int zeros = 0;
