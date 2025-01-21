@@ -14,12 +14,4 @@ The solutions in this repository are automatically added and committed using an 
 
 If you have any questions or suggestions, feel free to open an issue or contact me directly.
 
-Happy coding! 🚀
-
----
-
-*Note: This repository is continuously updated as new problems are solved and existing solutions are improved.*
-
----
-
 Enjoy solving problems and improving your coding skills with these solutions!
