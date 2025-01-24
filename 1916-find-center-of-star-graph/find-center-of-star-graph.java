@@ -36,39 +36,41 @@ class Solution {
                 list.add(d);
             }
         }
-        int result1 = edges[0][0];
-        int result2 = edges[0][1];
+        else{
+            int result1 = edges[0][0];
+            int result2 = edges[0][1];
 
-        int num1 = edges[1][0];
-        int num2 = edges[1][1];
+            int num1 = edges[1][0];
+            int num2 = edges[1][1];
 
-        int num3 = edges[2][0];
-        int num4 = edges[2][1];
+            int num3 = edges[2][0];
+            int num4 = edges[2][1];
 
-        if(num1 == result1 && num3 == result1){
-            return result1;
-        }
-        if(num1 == result1 && num4 == result1){
-            return result1;
-        }
-        if(num2 == result1 && num3 == result1){
-            return result1;
-        }
-        if(num2 == result1 && num4 == result1){
-            return result1;
-        }
+            if(num1 == result1 && num3 == result1){
+                return result1;
+            }
+            if(num1 == result1 && num4 == result1){
+                return result1;
+            }
+            if(num2 == result1 && num3 == result1){
+                return result1;
+            }
+            if(num2 == result1 && num4 == result1){
+                return result1;
+            }
 
-        if(num1 == result2 && num3 == result2){
-            return result2;
-        }
-        if(num1 == result2 && num4 == result2){
-            return result2;
-        }
-        if(num2 == result2 && num3 == result2){
-            return result2;
-        }
-        if(num2 == result2 && num4 == result2){
-            return result2;
+            if(num1 == result2 && num3 == result2){
+                return result2;
+            }
+            if(num1 == result2 && num4 == result2){
+                return result2;
+            }
+            if(num2 == result2 && num3 == result2){
+                return result2;
+            }
+            if(num2 == result2 && num4 == result2){
+                return result2;
+            }
         }
 
         return 0;
