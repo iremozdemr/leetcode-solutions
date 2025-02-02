@@ -2,7 +2,6 @@ class Solution {
     public int countOrders(int n) {
         int elementCount = n*2;
         double divide = Math.pow(2,n);
-        //divide = divide % ((long) (Math.pow(10,9)) + 7);
         int result = factorial(elementCount,divide);
 
         return result;
