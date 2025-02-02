@@ -13,13 +13,11 @@ class Solution {
 
         for (int factor = 2; factor <= number; factor++) {
             if(divide >= 2 && factor % 2 == 0){
-                result = result % (Math.pow(10,9) + 7);
                 result *= factor / 2;
                 divide = divide / 2;
                 result = result % (Math.pow(10,9) + 7);
             }
             else{
-                result = result % (Math.pow(10,9) + 7);
                 result *= factor;
                 result = result % (Math.pow(10,9) + 7);
             }
